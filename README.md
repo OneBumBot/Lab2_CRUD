@@ -19,10 +19,12 @@
 
 2. Хореография
 Добавление поста
+
 ![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Добавление.png)
 
 
 Удаление поста
+
 ![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Удаление.png)
 
 3. Структура базы данных
