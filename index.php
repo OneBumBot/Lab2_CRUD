@@ -110,15 +110,8 @@
                         	<?php echo $post[3]; ?>
                     	</div>
                     	<div style="font-size: 20px; margin: 10px 15px;">
-        					<?php
-        					$results = mysqli_query($connect, "SELECT * FROM reactions WHERE postid=".$post[0]."");
-        					if (mysqli_num_rows($results) == 1 ): ?>
-        						<span style="color: #092A5B;" class="unlike fa fa-thumbs-down" data-id="<?php echo $post[0]; ?>"></span>
-        						<span style="color: rgba(194, 0, 0, 0.74);;" class="like hide fa fa-thumbs-o-up" data-id="<?php echo $post[0]; ?>"></span>
-        					<?php else: ?>
-                            	<span style="color: #092A5B;;" class="unlike hide fa fa-thumbs-down" data-id="<?php echo $post[0]; ?>"></span>
-        						<span style="color: rgba(194, 0, 0, 0.74);;"  class="like fa fa-thumbs-o-up" data-id="<?php echo $post[0]; ?>"></span>
-        					<?php endif ?>
+
+
         					<span> Лайки: <?php echo $post[5]; ?> <a href="set_likes.php?id=<?=$post[0]?>" style = "color: green;">+</a></span>
                             <br>
                             <span>Дизлайки: <?php echo $post[6]; ?> <a href="set_dislikes.php?id=<?=$post[0]?>" style = "color: red;">-</a></span>

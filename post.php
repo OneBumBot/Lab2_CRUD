@@ -9,7 +9,7 @@
         $_SESSION['message'] = "Поле поста не может быть пустым";
         header('Location: ../index.php');
     }
-    else if(empty($login =='')){
+    else if(empty($login)){
         $_SESSION['message'] = "Введите логин";
         header('Location: ../index.php');
     }
